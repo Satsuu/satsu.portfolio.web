@@ -16,7 +16,7 @@ const TypewriterEffect = () => {
 
   const textSequence = [
     "I am a Web Developer.",
-    "I am an Android Developer.",
+    "I am a Android Developer.",
     "I am ready to collaborate.",
   ]
 
@@ -52,21 +52,29 @@ const TypewriterEffect = () => {
 
   return (
     <div>
-      <h1 className="text-3xl md:text-5xl font-bold mb-4 text-gray-400">
-        Hi, I am a Junior Full-Stack Developer.
-      </h1>
-      <p className="text-base md:text-lg mb-8 text-gray-300">
+      <div className="font-bold mb-0 text-gray-400">
+        <span className="text-3xl md:text-5xl">Hi, I am a Junior </span>
+      </div>
+      <div className="font-bold mb-4 text-gray-400">
+        <span className="text-5xl md:text-6xl">Full-Stack Developer.</span>
+      </div>
+
+      <p className="text-xl md:text-2xl mb-8 text-gray-300">
         {displayedText}
         <span className="animate-blink">|</span>
       </p>
       <div className="flex justify-center md:justify-start space-x-2">
         <Button
           variant="outline"
+          size="lg"
           className="px-6 py-3 text-black hover:bg-gray-600 active:bg-gray-700 dark:text-white dark:hover:bg-gray-400 dark:active:bg-gray-500"
         >
           Contact Me
         </Button>
-        <Button className="px-6 py-3 text-white hover:bg-gray-600 active:bg-gray-700 dark:text-black dark:hover:bg-gray-400 dark:active:bg-gray-500">
+        <Button
+          size="lg"
+          className="px-6 py-3 text-white hover:bg-gray-600 active:bg-gray-700 dark:text-black dark:hover:bg-gray-400 dark:active:bg-gray-500"
+        >
           Show Profile
         </Button>
         <ThemeToggle />

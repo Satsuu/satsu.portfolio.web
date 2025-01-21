@@ -8,7 +8,7 @@ export default function NavItems() {
         <Link
           key={link.href}
           href={link.href}
-          className="text-muted-foreground hover:text-foreground"
+          className="text-muted-foreground hover:text-foreground dark:text-white"
         >
           {link.label}
         </Link>

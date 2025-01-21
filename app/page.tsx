@@ -1,19 +1,24 @@
 import NavBar from "@/components/navbar/nav-bar"
 import Image from "next/image"
 import TypewriterEffect from "@/components/typewritter-effect"
+import { ChevronDown } from "lucide-react"
 
 export default function Home() {
   return (
     <div>
       <NavBar />
-      <main className="relative bg-black text-white h-screen flex flex-col md:flex-row items-center md:items-start">
-        <div className="w-full md:w-1/2 pl-2 md:pl-44 flex flex-col justify-center h-full text-center md:text-left">
+      <main className="relative bg-white dark:bg-black  text-white h-screen flex flex-col md:flex-row items-center md:items-start">
+        <div className="w-full md:w-3/4 pl-2 md:pl-20 flex flex-col justify-center h-full text-center md:text-left">
           <TypewriterEffect />
+        </div>
+
+        <div className="absolute bottom-10 flex justify-center left-1/2 transform -translate-x-1/2 z-10">
+          <ChevronDown className="animate-bounce text-white w-10 h-10" />
         </div>
 
         <div className="w-full md:w-1/2 relative h-1/2 md:h-full">
           <Image
-            src="/images/satsu_3.png"
+            src="/images/satsu_5.png"
             alt="Profile Picture"
             layout="fill"
             style={{ objectFit: "cover" }}
