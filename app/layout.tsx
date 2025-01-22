@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { GeistSans } from "geist/font/sans"
+import BubbleCursor from "@/components/bubble-cursor"
 
 export const metadata: Metadata = {
   title: "Satsu.portfolio",
@@ -23,6 +24,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <BubbleCursor />
         </ThemeProvider>
       </body>
     </html>

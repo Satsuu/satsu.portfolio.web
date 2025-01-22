@@ -51,15 +51,15 @@ const TypewriterEffect = () => {
   }, [currentIndex, isDeleting, currentText, textIndex, textSequence])
 
   return (
-    <div>
-      <div className="font-bold mb-0 text-gray-400">
+    <div className="w-fit">
+      <div className="font-bold mb-0 text-black dark:text-gray-400">
         <span className="text-3xl md:text-5xl">Hi, I am a Junior </span>
       </div>
-      <div className="font-bold mb-4 text-gray-400">
-        <span className="text-5xl md:text-6xl">Full-Stack Developer.</span>
+      <div className="font-bold mb-0 text-black dark:text-gray-400">
+        <span className="text-4xl md:text-6xl">Full-Stack Developer.</span>
       </div>
 
-      <p className="text-xl md:text-2xl mb-8 text-gray-300">
+      <p className="text-xl md:text-2xl mb-8 text-gray-600 dark:text-gray-300">
         {displayedText}
         <span className="animate-blink">|</span>
       </p>
@@ -77,7 +77,9 @@ const TypewriterEffect = () => {
         >
           Show Profile
         </Button>
-        <ThemeToggle />
+        <div className="hidden md:block">
+          <ThemeToggle />
+        </div>
       </div>
     </div>
   )
