@@ -33,7 +33,7 @@ class Particle {
     const scale =
       0.2 + (this.initialLifeSpan - this.lifeSpan) / this.initialLifeSpan
 
-    context.fillStyle = "#e6f1f7"
+    context.fillStyle = "#eecbf5"
     context.strokeStyle = "#3a92c5"
     context.beginPath()
     context.arc(
