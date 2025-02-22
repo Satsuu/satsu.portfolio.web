@@ -1,5 +1,6 @@
 import NavItems from "./nav-items"
 import MobileNav from "./mobile-nav"
+import { ThemeToggle } from "../theme-toggle"
 
 export default function NavBar() {
   return (
@@ -7,6 +8,7 @@ export default function NavBar() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <nav className="hidden md:flex items-center gap-6 ml-auto">
           <NavItems />
+          <ThemeToggle />
         </nav>
         <MobileNav />
       </div>
