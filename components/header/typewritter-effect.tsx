@@ -77,9 +77,6 @@ const TypewriterEffect = () => {
         >
           Show Profile
         </Button>
-        <div className="hidden md:block">
-          <ThemeToggle />
-        </div>
       </div>
     </div>
   )
