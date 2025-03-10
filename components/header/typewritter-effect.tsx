@@ -7,9 +7,7 @@ import { ThemeToggle } from "@/components/theme-toggle"
 
 const TypewriterEffect = () => {
   const [displayedText, setDisplayedText] = useState<string>("")
-  const [currentText, setCurrentText] = useState<string>(
-    "I know web development."
-  )
+  const [currentText, setCurrentText] = useState<string>("")
   const [currentIndex, setCurrentIndex] = useState<number>(0)
   const [isDeleting, setIsDeleting] = useState<boolean>(false)
   const [textIndex, setTextIndex] = useState<number>(0)
@@ -51,30 +49,27 @@ const TypewriterEffect = () => {
   }, [currentIndex, isDeleting, currentText, textIndex, textSequence])
 
   return (
-    <div className="w-fit">
+    <div className="text-center">
       <div className="font-bold mb-0 text-black dark:text-gray-400">
-        <span className="text-3xl md:text-5xl">Hi, I am a Junior </span>
+        <span className="text-xl md:text-5xl">Hi, I am a Junior </span>
       </div>
       <div className="font-bold mb-0 text-black dark:text-gray-400">
-        <span className="text-4xl md:text-6xl">Full-Stack Developer.</span>
+        <span className="text-4xl md:text-5xl">Full-Stack Developer.</span>
       </div>
 
       <p className="text-xl md:text-2xl mb-8 text-gray-600 dark:text-gray-300">
         {displayedText}
         <span className="animate-blink">|</span>
       </p>
-      <div className="flex justify-center md:justify-start space-x-2">
+      <div className="flex justify-center md:justify-center space-x-2">
         <Button
           variant="outline"
           size="lg"
-          className="px-6 py-3 text-black hover:bg-gray-600 active:bg-gray-700 dark:text-white dark:hover:bg-gray-400 dark:active:bg-gray-500"
+          className="px-6 py-3 text-black dark:text-white"
         >
           Contact Me
         </Button>
-        <Button
-          size="lg"
-          className="px-6 py-3 text-white hover:bg-gray-600 active:bg-gray-700 dark:text-black dark:hover:bg-gray-400 dark:active:bg-gray-500"
-        >
+        <Button size="lg" className="px-6 py-3 text-white dark:text-black">
           Show Profile
         </Button>
       </div>
