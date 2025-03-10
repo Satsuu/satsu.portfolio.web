@@ -1,8 +1,9 @@
 import type { Metadata } from "next"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import { ThemeToggle } from "@/components/theme-toggle"
+import { FloatingNav } from "@/components/navbar/floating-nav"
 import { GeistSans } from "geist/font/sans"
-// import BubbleCursor from "@/components/bubble-cursor"
 
 export const metadata: Metadata = {
   title: "Satsu.portfolio",
@@ -23,8 +24,13 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <FloatingNav />
+
+          <div className="fixed top-5 right-5 z-50">
+            <ThemeToggle />
+          </div>
+
           {children}
-          {/* <BubbleCursor /> */}
         </ThemeProvider>
       </body>
     </html>

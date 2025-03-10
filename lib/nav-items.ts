@@ -19,7 +19,7 @@ export const navItems: NavItem[] = [
   },
   {
     name: "Technologies",
-    href: "#",
+    href: "#technologies",
     icon: CodeXml,
   },
   {
@@ -29,7 +29,7 @@ export const navItems: NavItem[] = [
   },
   {
     name: "Contact",
-    href: "#",
+    href: "#contact",
     icon: MessageSquare,
   },
 ]
