@@ -17,6 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={GeistSans.className} suppressHydrationWarning>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+        />
+      </head>
       <body className="bg-background text-foreground">
         <ThemeProvider
           attribute="class"
