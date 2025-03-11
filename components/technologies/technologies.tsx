@@ -18,7 +18,13 @@ export default function TechnologiesSection() {
         id="technologies"
         className="h-screen pt-10 md:pt-20 md:mt-20 flex flex-col items-center"
       >
-        <div className="w-full md:w-1/2 text-center">
+        <motion.div
+          className="w-full md:w-1/2 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
           <h1 className="text-4xl md:text-5xl font-bold">
             Skills & Technologies
           </h1>
@@ -27,7 +33,7 @@ export default function TechnologiesSection() {
             frameworks I specialize in, enabling the development of dynamic,
             scalable, and high-performing web and mobile applications.
           </p>
-        </div>
+        </motion.div>
 
         <div className="w-full mt-10 flex flex-wrap justify-center gap-2 p-6">
           <TooltipProvider>

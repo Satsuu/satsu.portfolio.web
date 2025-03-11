@@ -1,12 +1,21 @@
+"use client"
+
 import PageContainer from "../page-container"
 import ProjectList from "./project-list"
+import { motion } from "framer-motion"
 
 export default function ProjectSection() {
   return (
     <PageContainer>
       <div id="projects" className="h-auto pt-10 md:pt-20">
         <div className="flex flex-col md:flex-row items-start justify-center md:items-center">
-          <div className="w-full flex flex-col justify-center h-full text-center md:text-center">
+          <motion.div
+            className="w-full flex flex-col justify-center h-full text-center md:text-center"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
             <h1 className="text-4xl md:text-5xl font-bold">
               Top Projects I've Built
             </h1>
@@ -18,7 +27,7 @@ export default function ProjectSection() {
             <div className="mt-20">
               <ProjectList />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </PageContainer>
