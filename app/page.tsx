@@ -17,45 +17,25 @@ export default function Home() {
         style={{ scaleX: scrollYProgress }}
       />
 
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-      >
+      <div>
         <HeaderSection />
-      </motion.div>
+      </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-      >
+      <div>
         <ProjectSection />
-      </motion.div>
+      </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-      >
+      <div>
         <TechnologiesSection />
-      </motion.div>
+      </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-      >
+      <div>
         <AboutSection />
-      </motion.div>
+      </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-      >
+      <div>
         <ContactSection />
-      </motion.div>
+      </div>
 
       {/* <footer className="flex flex-wrap items-center justify-center p-2 z-10">
         <p>2025 Satsu. All rights reserved.</p>
