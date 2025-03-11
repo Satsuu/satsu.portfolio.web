@@ -13,8 +13,9 @@ export default function HeaderSection() {
       <div className="flex items-center justify-center flex-col md:flex-row">
         <motion.div
           initial={{ x: -200, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
+          whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.5 }}
         >
           <Image
             src="/images/me.png"
@@ -27,8 +28,9 @@ export default function HeaderSection() {
 
         <motion.div
           initial={{ x: 200, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
+          whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+          viewport={{ once: false, amount: 0.5 }}
           className="text-center md:text-left"
         >
           <TypewriterEffect />
