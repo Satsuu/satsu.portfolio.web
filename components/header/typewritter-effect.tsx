@@ -2,8 +2,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Button } from "@/components/ui/button"
-import { ThemeToggle } from "@/components/theme-toggle"
 
 const TypewriterEffect = () => {
   const [displayedText, setDisplayedText] = useState<string>("")
@@ -61,18 +59,6 @@ const TypewriterEffect = () => {
         {displayedText}
         <span className="animate-blink">|</span>
       </p>
-      <div className="flex justify-center md:justify-center space-x-2">
-        <Button
-          variant="outline"
-          size="lg"
-          className="px-6 py-3 text-black dark:text-white"
-        >
-          Contact Me
-        </Button>
-        <Button size="lg" className="px-6 py-3 text-white dark:text-black">
-          Show Profile
-        </Button>
-      </div>
     </div>
   )
 }

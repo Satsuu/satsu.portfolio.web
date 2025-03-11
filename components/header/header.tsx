@@ -3,6 +3,7 @@
 import Image from "next/image"
 import { motion } from "framer-motion"
 import TypewriterEffect from "@/components/header/typewritter-effect"
+import { Button } from "../ui/button"
 
 export default function HeaderSection() {
   return (
@@ -34,6 +35,18 @@ export default function HeaderSection() {
           className="text-center md:text-left"
         >
           <TypewriterEffect />
+          <div className="flex justify-center md:justify-center space-x-2">
+            <Button
+              variant="outline"
+              size="lg"
+              className="px-6 py-3 text-black dark:text-white"
+            >
+              Contact Me
+            </Button>
+            <Button size="lg" className="px-6 py-3 text-white dark:text-black">
+              Download CV
+            </Button>
+          </div>
         </motion.div>
       </div>
     </div>
