@@ -22,6 +22,7 @@ export const technologiesItem: TechnologyItems[] = [
   { name: "Python", icon: "devicon-python-plain" },
   { name: "Vercel", icon: "devicon-vercel-original" },
   { name: "vscode", icon: "devicon-vscode-plain" },
+  { name: "django restframework", icon: "devicon-djangorest-plain" },
 ]
 
 export const techItem: TechnologyItems[] = [
