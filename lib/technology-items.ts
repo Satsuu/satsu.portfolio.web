@@ -23,6 +23,8 @@ export const technologiesItem: TechnologyItems[] = [
   { name: "Vercel", icon: "devicon-vercel-original" },
   { name: "vscode", icon: "devicon-vscode-plain" },
   { name: "django restframework", icon: "devicon-djangorest-plain" },
+  { name: "Axios", icon: "devicon-axios-plain" },
+  { name: "Express", icon: "devicon-express-original" },
 ]
 
 export const techItem: TechnologyItems[] = [
@@ -44,4 +46,6 @@ export const techItem: TechnologyItems[] = [
   { name: "Springboot", icon: "devicon-spring-original" },
   { name: "ViteJS", icon: "devicon-vitejs-plain" },
   { name: "Wordpress", icon: "devicon-wordpress-plain " },
+  { name: "Java", icon: "devicon-java-plain" },
+  { name: "Git", icon: "devicon-git-plain" },
 ]
