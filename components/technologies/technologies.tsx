@@ -1,7 +1,6 @@
 "use client"
 
 import PageContainer from "../page-container"
-import { Card, CardContent } from "../ui/card"
 import {
   Tooltip,
   TooltipContent,
@@ -16,7 +15,7 @@ export default function TechnologiesSection() {
     <PageContainer>
       <div
         id="technologies"
-        className="h-screen pt-10 md:pt-20 md:mt-20 flex flex-col items-center"
+        className="h-screen pt-10 mt-10 md:pt-20 md:mt-20 flex flex-col items-center"
       >
         <motion.div
           className="w-full md:w-1/2 text-center"
@@ -37,13 +36,13 @@ export default function TechnologiesSection() {
 
         <div className="w-full mt-10 flex flex-wrap justify-center gap-2 p-6">
           <TooltipProvider>
-            <div className="overflow-hidden w-full mt-10 p-6">
+            <div className="overflow-hidden w-full mt-5 md:mt-10 p-2">
               <motion.div
-                className="flex gap-4 whitespace-nowrap"
+                className="flex md:gap-4 whitespace-nowrap will-change-transform"
                 animate={{ x: ["0%", "-100%"] }}
                 transition={{
                   repeat: Infinity,
-                  duration: 40,
+                  duration: 25,
                   ease: "linear",
                 }}
               >
@@ -60,7 +59,9 @@ export default function TechnologiesSection() {
                             whileHover={{ scale: 1.3 }}
                             transition={{ duration: 0.1 }}
                           >
-                            <i className={`${tech.icon} colored text-6xl`} />
+                            <i
+                              className={`${tech.icon} colored text-4xl md:text-6xl`}
+                            />
                           </motion.span>
                         </TooltipTrigger>
                         <TooltipContent>
@@ -76,13 +77,13 @@ export default function TechnologiesSection() {
           </TooltipProvider>
 
           <TooltipProvider>
-            <div className="overflow-hidden w-full mt-10 p-6">
+            <div className="overflow-hidden w-full mt-5 md:mt-10 p-2">
               <motion.div
-                className="flex gap-4 whitespace-nowrap"
+                className="flex md:gap-4 whitespace-nowrap will-change-transform"
                 animate={{ x: ["-100%", "0%"] }}
                 transition={{
                   repeat: Infinity,
-                  duration: 40,
+                  duration: 25,
                   ease: "linear",
                 }}
               >
@@ -97,7 +98,9 @@ export default function TechnologiesSection() {
                           whileHover={{ scale: 1.3 }}
                           transition={{ duration: 0.1 }}
                         >
-                          <i className={`${techs.icon} colored text-6xl`} />
+                          <i
+                            className={`${techs.icon} colored text-4xl md:text-6xl`}
+                          />
                         </motion.span>
                       </TooltipTrigger>
                       <TooltipContent>
